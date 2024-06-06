@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|solutionrelative:WSA\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|solutionrelative:WSA\\Data.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|solutionrelative:WSA\\Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\DataStruc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5804A4A-FD56-4C4B-84B1-B1572DD80B1D}|WSA\\WSA.vcxproj|solutionrelative:WSA\\DataStruc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 306,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataStruc.h",
+              "DocumentMoniker": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\DataStruc.h",
+              "RelativeDocumentMoniker": "WSA\\DataStruc.h",
+              "ToolTip": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\DataStruc.h",
+              "RelativeToolTip": "WSA\\DataStruc.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-06T18:22:44.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Data.h",
+              "DocumentMoniker": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.h",
+              "RelativeDocumentMoniker": "WSA\\Data.h",
+              "ToolTip": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.h",
+              "RelativeToolTip": "WSA\\Data.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-06T18:22:34.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Data.cpp",
+              "DocumentMoniker": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.cpp",
+              "RelativeDocumentMoniker": "WSA\\Data.cpp",
+              "ToolTip": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\Data.cpp",
+              "RelativeToolTip": "WSA\\Data.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-06T18:22:20.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\main.cpp",
+              "RelativeDocumentMoniker": "WSA\\main.cpp",
+              "ToolTip": "C:\\Users\\kadir\\Desktop\\CppWebSocketApi\\WSA\\WSA\\main.cpp",
+              "RelativeToolTip": "WSA\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-06T18:22:11.578Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 94,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
