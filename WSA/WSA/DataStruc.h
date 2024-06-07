@@ -48,8 +48,13 @@ public:
 	// Second Stage: Check for int, and asign. WORKS!
 	// Third Stage: Check for double, and asign. WORKS!
 	// Thats it for today. Next up:
-	// Forth Stage: Check for floats.
-	// Fifth Stage: Check for Strings inside ''.
+	// Forth Stage: Check for floats. WORKS! (cast to double if  you want a double)
+	// Fifth Stage: Check for Strings inside ''. WORKS!
+	////////////////////////////////////////////////////////////////////////////////////
+	// NEX::::
+	// Create Instances of data, than link them with pointers.
+
+
 	void dataStrucAlgo(std::string jsonString, int limitOfStrings);
 
 };

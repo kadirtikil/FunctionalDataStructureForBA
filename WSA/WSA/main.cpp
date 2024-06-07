@@ -2,9 +2,9 @@
 #include "DataStruc.h"
 
 int main() {
-	Data<double, std::string> obj(1.2, "hello");
+	//Data<double, std::string> obj(1.2, "hello");
 
-	DataStruc().dataStrucAlgo(R"({"A": 10.69})", 10);
+	DataStruc().dataStrucAlgo(R"({'Hello this might be a string too': 10000000000000000000000000000000000000000000000.12})", 100);
 
 
 	return 0;

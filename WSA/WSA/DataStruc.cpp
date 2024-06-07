@@ -11,7 +11,7 @@ void DataStruc::dataStrucAlgo(std::string jsonString, int limitOfStrings) {
 		if (jsonString[i] == '{') {
 			// Create a new datastruc
 		}
-		else if (jsonString[i] == '"') {
+		else if (jsonString[i] == '"' || jsonString[i] == '\'') {
 			// this means a string has been detected
 			// so i think i should send a runner. a runner is a loop that goes until it finds the other '"'
 			// and saves every character while doing so.
@@ -19,7 +19,7 @@ void DataStruc::dataStrucAlgo(std::string jsonString, int limitOfStrings) {
 				int runner = i + 1;
 				std::string word = "";
 				while (true) {
-					if (jsonString[runner] == '"') {
+					if (jsonString[runner] == '"' || jsonString[runner] == '\'') {
 						stringDetector = false;
 						break;
 					}
@@ -75,7 +75,14 @@ void DataStruc::dataStrucAlgo(std::string jsonString, int limitOfStrings) {
 				runner += 1;
 			}
 			if (isDouble) {
-				std::cout << "The detected double is: " << std::stod(num) << std::endl;
+				// BUT, if this num, is not inside the borders of a float, then cast it to floaty float float.
+				if (std::stod(num) < std::numeric_limits<float>::min() || std::stod(num) > std::numeric_limits<float>::max()) {
+					std::cout << "The detected double is: " << std::stod(num) << std::endl;
+					// BUUUUT what if the digit aint no digit, but an e.... cause floats contain e for 10^x...
+				}
+				else {
+					std::cout << "The detected float is: " << std::stof(num) << std::endl;
+				}
 			}
 			else {
 				std::cout << "The detected number is: " << std::stoi(num) << std::endl;
