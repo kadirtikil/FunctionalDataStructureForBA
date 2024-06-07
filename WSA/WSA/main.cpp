@@ -1,9 +1,11 @@
 #include "Data.h"
+#include "DataStruc.h"
 
 int main() {
 	Data<double, std::string> obj(1.2, "hello");
 
-	std::cout << typeid(obj.getKey()).name() << std::endl; 
+	DataStruc().dataStrucAlgo(R"({"A": 10.69})", 10);
+
 
 	return 0;
 }
