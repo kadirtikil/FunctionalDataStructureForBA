@@ -1,9 +1,9 @@
 #include "Data.h"
 
 int main() {
-	Data dataObj(1, "hamdulillah");
+	Data<double, std::string> obj(1.2, "hello");
 
-	dataObj.printValOfInstance();
+	std::cout << typeid(obj.getKey()).name() << std::endl; 
 
 	return 0;
 }
