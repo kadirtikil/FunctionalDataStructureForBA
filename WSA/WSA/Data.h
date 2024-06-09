@@ -14,7 +14,6 @@ public:
     // So time for templates:
     Data(T1 arg1, T2 arg2);
 
-
     Data(); // Default constructor
 
     // simpe func to print datatypes and its values.
@@ -27,10 +26,11 @@ public:
     T2 getValue() { return this->data.second; }
 
 
+    Data<T1, T2>* next = nullptr;
+    Data<T1, T2>* previous = nullptr;
 private:
     std::pair<typename T1, typename T2> data;
-    Data<T1,T2>* next = nullptr;
-    Data<T1,T2>* previous = nullptr;
+
 
 };
 

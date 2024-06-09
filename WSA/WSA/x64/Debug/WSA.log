@@ -1,7 +1,4 @@
-﻿  DataStruc.cpp
-C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\DataStruc.cpp(1,10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+﻿  main.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
 C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\Data.h(37,10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
-C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\DataStruc.cpp(4,22): error C2955: "Data" : Für die Verwendung von Klasse Vorlage ist eine Vorlage-Argumentliste erforderlich
-C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\DataStruc.cpp(4,12): error C2511: "DataStruc::DataStruc(Data *)": Überladene Memberfunktion nicht in "DataStruc" gefunden
-C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\DataStruc.cpp(4,68): error C2550: "DataStruc::{ctor}": Initialisierungslisten für Konstruktoren dürfen nur in Konstruktordefinition stehen
+  WSA.vcxproj -> C:\Users\kadir\Desktop\CppWebSocketApi\WSA\x64\Debug\WSA.exe
