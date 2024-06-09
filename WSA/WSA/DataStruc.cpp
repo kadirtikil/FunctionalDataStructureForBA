@@ -1,7 +1,14 @@
-#include "DataStruc.h"
+#include "DataStruc.h";
 
-DataStruc::DataStruc() {}
+// Concstructor
+template<typename T1, typename T2>
+DataStruc::DataStruc(Data<int,int>* element) : head(element), tail(element) {}
 
+// Getters
+template<typename T1,typename T2>
+Data<T1, T2>* DataStruc::getHead() { return this->head; }
+
+// The Algorithm
 void DataStruc::dataStrucAlgo(std::string jsonString, int limitOfStrings) {
 	bool stringDetector = true;
 

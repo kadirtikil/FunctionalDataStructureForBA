@@ -8,14 +8,14 @@ Data<T1, T2>::Data() {}
 
 template< typename T1, typename T2>
 Data<T1, T2>::Data(T1 arg1, T2 arg2) { 
-	this->attr.first = arg1;
-	this->attr.second = arg2;
+	this->data.first = arg1;
+	this->data.second = arg2;
 }
 
 template< typename T1, typename T2>
 void Data<T1, T2>::printData() {
-	std::cout << "KeyDataType: " << typeid(this->attr.first).name() << ", KeyValue: " << this->attr.first << std::endl;
-	std::cout << "ActualValueType: " << typeid(this->attr.second).name() << ", ActualValue: " << this->attr.second << std::endl;
+	std::cout << "KeyDataType: " << typeid(this->data.first).name() << ", KeyValue: " << this->data.first << std::endl;
+	std::cout << "ActualValueType: " << typeid(this->data.second).name() << ", ActualValue: " << this->data.second << std::endl;
 }
 
 

@@ -1,10 +1,14 @@
 #pragma once
+#ifndef DATASTRUC_H
+#define DATASTRUC_H
 
-#ifndef DATA_STRUC_H
-#define DATA_STRUC_H
-
-#include <iostream>
 #include "Data.h"
+
+#include <string>
+#include <optional>
+#include <iostream>
+#include <typeinfo>
+
 
 // this class will contain Data, such that a json can be read in.
 // so this is the class, that will iterate the json string, and make an object, that contains data objects, 
@@ -38,27 +42,53 @@
 
 class DataStruc {
 private:
+	template<typename T1, typename T2>
+	Data<T1, T2>* head();
+	template<typename T1, typename T2>
+	Data<T1, T2>* tail();
 
 public:
+	DataStruc() {}
+	// Concstructor takes in a Object of Class Data.
+	// Then has to make it, such that, the latest added element point its next pointer to the newest.
+	template<typename T1, typename T2>
+	DataStruc(Data<T1, T2>* element);
+	// Getter
+	template<typename T1, typename T2>
+	Data<T1, T2>* getHead();
+	template<typename T1, typename T2>
+	Data<T1, T2>* getTail();
 
-	DataStruc();
+	// Setters
+	template<typename T1, typename T2>
+	void setHead(Data<T1, T2>* element);
+	template<typename T1, typename T2>
+	void setTail(Data<T1, T2>* element);
+
+
+	// Add Element to list
+	template<typename T1, typename T2>
+	void addDataToList(Data<T1, T2> elem);
+
+
 
 	// The Algorithm is here. 
 	// First Stage: Check for strings, and asign. WORKS!
 	// Second Stage: Check for int, and asign. WORKS!
 	// Third Stage: Check for double, and asign. WORKS!
 	// Thats it for today. Next up:
-	// Forth Stage: Check for floats. WORKS! (cast to double if  you want a double)
+	// Forth Stage: Check for floats. WORKS! (cast to double if  you want a double cause its float by default)
 	// Fifth Stage: Check for Strings inside ''. WORKS!
 	////////////////////////////////////////////////////////////////////////////////////
-	// NEX::::
+	// NEXT::::
 	// Create Instances of data, than link them with pointers.
 
 
+
+	// The Backbone
 	void dataStrucAlgo(std::string jsonString, int limitOfStrings);
 
 };
-
 
 
 #endif

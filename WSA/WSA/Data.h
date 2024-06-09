@@ -22,13 +22,15 @@ public:
 
     // getter for attributes no setters yet. because i want this to be immutable after declaration such that
     // no nonos happen later on. keeping it functional
-    T1 getKey() { return this->attr.first; }
+    T1 getKey() { return this->data.first; }
 
-    T2 getValue() { return this->attr.second; }
+    T2 getValue() { return this->data.second; }
 
 
 private:
-    std::pair<typename T1, typename T2> attr;
+    std::pair<typename T1, typename T2> data;
+    Data<T1,T2>* next = nullptr;
+    Data<T1,T2>* previous = nullptr;
 
 };
 
