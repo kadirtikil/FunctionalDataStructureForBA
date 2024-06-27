@@ -4,6 +4,7 @@
 
 #include "Data.h"
 
+#include <limits>
 #include <string>
 #include <optional>
 #include <iostream>

@@ -29,11 +29,11 @@ public:
     Data<T1, T2>* next = nullptr;
     Data<T1, T2>* previous = nullptr;
 private:
-    std::pair<typename T1, typename T2> data;
+    std::pair<T1, T2> data;
 
 
 };
 
-#include "Data.cpp";
+#include "Data.cpp"
 
 #endif
