@@ -12,6 +12,11 @@ Data<T1, T2>::Data(T1 arg1, T2 arg2) {
 	this->data.second = arg2;
 }
 
+template <typename T1, typename T2>
+Data<T1, T2>::~Data() {
+	delete data;
+}
+
 template< typename T1, typename T2>
 void Data<T1, T2>::printData() {
 	std::cout << "KeyDataType: " << typeid(this->data.first).name() << ", KeyValue: " << this->data.first << std::endl;

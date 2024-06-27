@@ -16,6 +16,9 @@ public:
 
     Data(); // Default constructor
 
+    // Destructor here
+    ~Data();
+
     // simpe func to print datatypes and its values.
     void printData();
 

@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
-C:\Users\kadir\Desktop\CppWebSocketApi\WSA\WSA\Data.h(37,10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
-  WSA.vcxproj -> C:\Users\kadir\Desktop\CppWebSocketApi\WSA\x64\Debug\WSA.exe
