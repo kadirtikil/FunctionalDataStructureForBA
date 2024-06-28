@@ -37,7 +37,13 @@ int main() {
 	// While doing that, the algorithm will create new and appropriate elements for 
 	// datastruc.
 
-	std::cout << "Hello" << std::endl;
+    std::string temp = extractInt();
+	std::cout << temp << std::endl;
+    
+
+
+
+    std::cout << "\n";
 
 	return 0;
 }
