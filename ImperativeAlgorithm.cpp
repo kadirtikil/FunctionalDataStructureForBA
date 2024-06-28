@@ -4,41 +4,41 @@
 
 
 // The Backbone
-	//template<typedef T1, typedef T2>
-	void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int limitOfStrings) {
-		bool stringDetector = true;
+//template<typedef T1, typedef T2>
+void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int limitOfStrings) {
+	bool stringDetector = true;
 
-		// for for now, will try to use pattern matching with hof next.
-		for (int i = 0; i < jsonString.length(); i++) {
-			// if '{' is found, create a datatstruc.
-			if (jsonString[i] == '{') {
-				// Create a new datastruc
-			}
-			else if (jsonString[i] == '"' || jsonString[i] == '\'') {
-				// this means a string has been detected
-				// so i think i should send a runner. a runner is a loop that goes until it finds the other '"'
-				// and saves every character while doing so.
-				if (stringDetector) {
-					int runner = i + 1;
-					std::string word = "";
-					while (true) {
-						if (jsonString[runner] == '"' || jsonString[runner] == '\'') {
-							stringDetector = false;
-							break;
-						}
-						else if (runner - i == limitOfStrings) {
-							int endOfStringFinder = runner;
-							while (true)
-							{
-								if (jsonString[endOfStringFinder] = '"') {
-									runner = endOfStringFinder;
-									break;
-								}
+	// for for now, will try to use pattern matching with hof next.
+	for (int i = 0; i < jsonString.length(); i++) {
+		// if '{' is found, create a datatstruc.
+		if (jsonString[i] == '{') {
+			// Create a new datastruc
+		}
+		else if (jsonString[i] == '"' || jsonString[i] == '\'') {
+			// this means a string has been detected
+			// so i think i should send a runner. a runner is a loop that goes until it finds the other '"'
+			// and saves every character while doing so.
+			if (stringDetector) {
+				int runner = i + 1;
+				std::string word = "";
+				while (true) {
+					if (jsonString[runner] == '"' || jsonString[runner] == '\'') {
+						stringDetector = false;
+						break;
+					}
+					else if (runner - i == limitOfStrings) {
+						int endOfStringFinder = runner;
+						while (true)
+						{
+							if (jsonString[endOfStringFinder] = '"') {
+								runner = endOfStringFinder;
+								break;
 							}
-							word.clear();
-							stringDetector = false;
-							break;
 						}
+						word.clear();
+						stringDetector = false;
+						break;
+					}
 						else {
 							word += jsonString[runner];
 						}

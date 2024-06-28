@@ -37,8 +37,7 @@ int main() {
 	// While doing that, the algorithm will create new and appropriate elements for 
 	// datastruc.
 
-
-	
+	std::cout << "Hello" << std::endl;
 
 	return 0;
 }
