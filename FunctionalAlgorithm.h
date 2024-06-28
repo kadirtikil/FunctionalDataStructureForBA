@@ -2,7 +2,7 @@
 #define FUNCTIONAL_ALGORITHM_H
 
 #include <string>
-
+#include <iostream>
 
 
 // The Functional way of parsing a json.

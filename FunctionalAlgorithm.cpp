@@ -1,14 +1,15 @@
 #include "FunctionalAlgorithm.h"
 
 
-void functionalJsonParser() {
+void functionalJsonParser(std::string jsonString) {
 	// int for index of parser in json
 	int parser = 0;
 
 	// switch cases in  here
-	switch(parser) 
+	switch(jsonString[parser]) 
 	{
-		case 1:
+        case '"':
+            std::cout << extractString();
             parser++;
 			break;
 		case 2:
