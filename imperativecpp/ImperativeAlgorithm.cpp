@@ -39,10 +39,10 @@ void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int 
 						stringDetector = false;
 						break;
 					}
-						else {
-							word += jsonString[runner];
-						}
-						runner += 1;
+					else {
+						word += jsonString[runner];
+					}
+					runner += 1;
 					}
 					if (word == "") {
 						std::cout << "The string was to long. skipped to the end." << std::endl;
@@ -50,51 +50,48 @@ void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int 
 					else {
 						std::cout << "this is the word, that has been found: " << word << std::endl;
 					}
-
 					word.clear();
 					stringDetector = false;
 					i = runner;
 				}
-				else {
-					stringDetector = true;
-				}
-			}
-			else if (std::isdigit(jsonString[i])) {
-				bool isDouble = false;
-				int runner = i;
-				std::string num = "";
-
-				while (true) {
-					if (jsonString[runner] == ':' || jsonString[runner] == '\n' || jsonString[runner] == ',' || jsonString[runner] == '}') {
-						break;
-					}
-					else if (jsonString[runner] == '.') {
-						isDouble = true;
-						num += jsonString[runner];
-					}
-					else {
-						num += jsonString[runner];
-					}
-					runner += 1;
-				}
-				if (isDouble) {
-					// BUT, if this num, is not inside the borders of a float, then cast it to floaty float float.
-					if (std::stod(num) < std::numeric_limits<float>::min() || std::stod(num) > std::numeric_limits<float>::max()) {
-						std::cout << "The detected double is: " << std::stod(num) << std::endl;
-						// BUUUUT what if the digit is no digit, but an e.... because floats contain e for 10^x...
-					}
-					else {
-						std::cout << "The detected float is: " << std::stof(num) << std::endl;
-					}
-				}
-				else {
-					std::cout << "The detected number is: " << std::stoi(num) << std::endl;
-				}
-				num.clear();
-				i = runner;
+			else {
+			    stringDetector = true;
 			}
 		}
+		else if (std::isdigit(jsonString[i])) {
+			bool isDouble = false;
+			int runner = i;
+			std::string num = "";
 
-
-	};
+			while (true) {
+				if (jsonString[runner] == ':' || jsonString[runner] == '\n' || jsonString[runner] == ',' || jsonString[runner] == '}') {
+					break;
+				}
+				else if (jsonString[runner] == '.') {
+					isDouble = true;
+					num += jsonString[runner];
+				}
+				else {
+					num += jsonString[runner];
+				}
+				runner += 1;
+			}
+			if (isDouble) {
+				// BUT, if this num, is not inside the borders of a float, then cast it to floaty float float.
+				if (std::stod(num) < std::numeric_limits<float>::min() || std::stod(num) > std::numeric_limits<float>::max()) {
+					std::cout << "The detected double is: " << std::stod(num) << std::endl;
+					// BUUUUT what if the digit is no digit, but an e.... because floats contain e for 10^x...
+				}
+				else {
+					std::cout << "The detected float is: " << std::stof(num) << std::endl;
+				}
+			}
+			else {
+				std::cout << "The detected number is: " << std::stoi(num) << std::endl;
+			}
+			num.clear();
+			i = runner;
+	    }
+    }
+};
 

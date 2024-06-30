@@ -10,14 +10,14 @@ int main() {
 	
     std::string jsonString = R"({
       "name": "John Doe",
-      "age": 30,
+      "age": "302",
       "email": "johndoe@example.com",
-      "isMember": true,
-      "balance": 100.50,
+      "isMember": "true",
+      "balance": "100.50",
       "testtest": "testendet hier"
     })";
 
-    dataStrucAlgo(jsonString, 1000);    
+    dataStrucAlgo(jsonString, 10);    
 
 
     std::cout << "\n";
