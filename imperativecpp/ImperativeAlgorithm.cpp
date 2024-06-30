@@ -81,7 +81,7 @@ void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int 
 					// BUT, if this num, is not inside the borders of a float, then cast it to floaty float float.
 					if (std::stod(num) < std::numeric_limits<float>::min() || std::stod(num) > std::numeric_limits<float>::max()) {
 						std::cout << "The detected double is: " << std::stod(num) << std::endl;
-						// BUUUUT what if the digit aint no digit, but an e.... cause floats contain e for 10^x...
+						// BUUUUT what if the digit is no digit, but an e.... because floats contain e for 10^x...
 					}
 					else {
 						std::cout << "The detected float is: " << std::stof(num) << std::endl;
