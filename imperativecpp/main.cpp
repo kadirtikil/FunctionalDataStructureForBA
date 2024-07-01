@@ -17,7 +17,7 @@ int main() {
       "testtest": "testendet hier"
     })";
 
-    dataStrucAlgo(jsonString, 10);    
+    dataStrucAlgo(jsonString, 1000);    
 
 
     std::cout << "\n";

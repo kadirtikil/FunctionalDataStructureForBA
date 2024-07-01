@@ -6,8 +6,8 @@
 // The Backbone
 //template<typedef T1, typedef T2>
 void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int limitOfStrings) {
-	bool stringDetector = true;
-
+	bool stringDetector = false;
+    std::string word = "";
 	// for for now, will try to use pattern matching with hof next.
 	for (int i = 0; i < jsonString.length(); i++) {
 		// if '{' is found, create a datatstruc.
@@ -18,11 +18,12 @@ void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int 
 			// this means a string has been detected
 			// so i think i should send a runner. a runner is a loop that goes until it finds the other '"'
 			// and saves every character while doing so.
-			if (stringDetector) {
+			stringDetector = true;
+            if (stringDetector) {
 				int runner = i + 1;
-				std::string word = "";
 				while (true) {
-					if (jsonString[runner] == '"' || jsonString[runner] == '\'') {
+				    // if the immediate next index is a string, then its and empty string. the word is already empty so just break the loop n keep going.
+                    if (jsonString[runner] == '"' || jsonString[runner] == '\'') {
 						stringDetector = false;
 						break;
 					}
@@ -53,7 +54,7 @@ void dataStrucAlgo(std::string jsonString, /*DataStruc<T1,T2>* dataStruc,*/ int 
 					word.clear();
 					stringDetector = false;
 					i = runner;
-				}
+			}
 			else {
 			    stringDetector = true;
 			}
